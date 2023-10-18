@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-md py-2 tracking-widest text-sm;
+  }
+  .btn--primary {
+    @apply bg-gradient-to-r from-lgrad1 to-lgrad2 text-white hover:bg-none hover:border hover:border-lgrad1 hover:text-lgrad2;
+  }
+
+  .btn--accent {
+    @apply bg-white text-lgrad2 hover:bg-transparent hover:border hover:text-white;
+  }
+  .card {
+    @apply flex flex-col py-8 px-10 rounded-md tracking-wider;
+  }
+}
